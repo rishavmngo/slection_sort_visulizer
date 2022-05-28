@@ -1,0 +1,24 @@
+:root {
+  --gridColumn: 15;
+  --gridRow: 15;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background-color: #293462;
+  display: grid;
+  grid-template-columns: repeat(var(--gridColumn), 1fr);
+  grid-template-rows: repeat(var(--gridRow), 1fr);
+}
+
+#frame > div {
+  background-color: #f24c4c;
+  border: 1px solid white;
+}
+#frame {
+  transform: rotate(180deg);
+}
